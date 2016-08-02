@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Test {
-	int timeSlide=1;//一个时间片的时间长度
+	int timeSlide=3;//一个时间片的时间长度
 	ArrayList<PCB> unFinishedQueue=new ArrayList<>();	//存储未完成的队列
 	ArrayList<PCB> finishedQueue=new ArrayList<>();		//存储已完成的队列
 	double waitTime=0;
@@ -163,12 +163,12 @@ public class Test {
 //			}
 		}
 		System.out.println("所有进程运行结束");
-		System.out.println("进程名      等待时间");
-		for (PCB pcb : finishedQueue) {
-			System.out.println(pcb.getNo()+"    "+pcb.getWaitTime());
-			totalWaitTime+=pcb.getWaitTime();
-		}
-		System.out.println("平均等待时间为"+(totalWaitTime/finishedQueue.size()));
+//		System.out.println("进程名      等待时间");
+//		for (PCB pcb : finishedQueue) {
+//			System.out.println(pcb.getNo()+"    "+pcb.getWaitTime());
+//			totalWaitTime+=pcb.getWaitTime();
+//		}
+//		System.out.println("平均等待时间为"+(totalWaitTime/finishedQueue.size()));
 	}
 	
 	
@@ -231,12 +231,12 @@ public class Test {
 //			}
 		}
 		System.out.println("所有进程运行结束");
-		System.out.println("进程名      等待时间");
-		for (PCB pcb : finishedQueue) {
-			System.out.println(pcb.getNo()+"    "+pcb.getWaitTime());
-			totalWaitTime+=pcb.getWaitTime();
-		}
-		System.out.println("平均等待时间为"+(totalWaitTime/finishedQueue.size()));
+//		System.out.println("进程名      等待时间");
+//		for (PCB pcb : finishedQueue) {
+//			System.out.println(pcb.getNo()+"    "+pcb.getWaitTime());
+//			totalWaitTime+=pcb.getWaitTime();
+//		}
+//		System.out.println("平均等待时间为"+(totalWaitTime/finishedQueue.size()));
 	}
 	
 	public void loadProcess() {
